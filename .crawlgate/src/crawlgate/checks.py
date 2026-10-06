@@ -25,6 +25,8 @@ def noindex(p: Page, cfg: Config) -> bool:
 
 def page_checks(p: Page, site: SiteData, cfg: Config, prod_hosts: set[str], sitemap: set[str]) -> Iterator[Raw]:
     u = p.url
+    if _host(u) not in prod_hosts | {_host(site.base_url)}:
+        return  # third-party target: judged by the rule that referenced it (canonical/hreflang), not here
     if p.status >= 500 or p.status == 0:
         yield "page_5xx", u, f"page returned {p.status or 'no response'}", str(p.status)
     hops = len(p.redirect_chain)
