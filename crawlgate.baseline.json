@@ -1,0 +1,202 @@
+{
+  "base_url": "http://127.0.0.1:8000/",
+  "counts": {
+    "BLOCK": 0,
+    "INFO": 0,
+    "WARN": 0,
+    "known": 0
+  },
+  "findings": [],
+  "schema_version": 1,
+  "site": {
+    "base_url": "http://127.0.0.1:8000/",
+    "crawl_complete": true,
+    "pages": [
+      {
+        "content_type": "text/html",
+        "depth": 0,
+        "final_url": "http://127.0.0.1:8000/",
+        "hydration_only": [],
+        "links": [
+          "http://127.0.0.1:8000/",
+          "http://127.0.0.1:8000/about.html",
+          "http://127.0.0.1:8000/pricing.html"
+        ],
+        "og_image": {
+          "absolute": true,
+          "content_type": "image/png",
+          "height": 630,
+          "meta_alt": "Demo card",
+          "meta_height": "630",
+          "meta_width": "1200",
+          "status": 200,
+          "url": "http://127.0.0.1:8000/og.png",
+          "width": 1200
+        },
+        "redirect_chain": [],
+        "status": 200,
+        "surface": {
+          "canonical": "http://127.0.0.1:8000/",
+          "canonical_count": 1,
+          "hreflang": {},
+          "jsonld": [
+            {
+              "error": null,
+              "missing_properties": {},
+              "types": [
+                "WebSite"
+              ],
+              "valid_json": true
+            }
+          ],
+          "meta_description": "A tiny static demo site used to show crawlgate blocking SEO regressions in a pull request.",
+          "meta_robots": null,
+          "og": {
+            "og:description": "A tiny static demo site used to show crawlgate blocking SEO regressions in a pull request.",
+            "og:image": "http://127.0.0.1:8000/og.png",
+            "og:image:alt": "Demo card",
+            "og:image:height": "630",
+            "og:image:width": "1200",
+            "og:title": "Demo shop home page",
+            "og:url": "http://127.0.0.1:8000/"
+          },
+          "title": "Demo shop home page",
+          "twitter": {
+            "twitter:card": "summary_large_image",
+            "twitter:image": "http://127.0.0.1:8000/og.png"
+          }
+        },
+        "url": "http://127.0.0.1:8000/",
+        "x_robots_tag": null
+      },
+      {
+        "content_type": "text/html",
+        "depth": 1,
+        "final_url": "http://127.0.0.1:8000/about.html",
+        "hydration_only": [],
+        "links": [
+          "http://127.0.0.1:8000/",
+          "http://127.0.0.1:8000/about.html",
+          "http://127.0.0.1:8000/pricing.html"
+        ],
+        "og_image": {
+          "absolute": true,
+          "content_type": "image/png",
+          "height": 630,
+          "meta_alt": "Demo card",
+          "meta_height": "630",
+          "meta_width": "1200",
+          "status": 200,
+          "url": "http://127.0.0.1:8000/og.png",
+          "width": 1200
+        },
+        "redirect_chain": [],
+        "status": 200,
+        "surface": {
+          "canonical": "http://127.0.0.1:8000/about.html",
+          "canonical_count": 1,
+          "hreflang": {},
+          "jsonld": [
+            {
+              "error": null,
+              "missing_properties": {},
+              "types": [
+                "WebSite"
+              ],
+              "valid_json": true
+            }
+          ],
+          "meta_description": "Who we are and why this demo site exists: to prove the crawlgate GitHub Action works end to end.",
+          "meta_robots": null,
+          "og": {
+            "og:description": "Who we are and why this demo site exists: to prove the crawlgate GitHub Action works end to end.",
+            "og:image": "http://127.0.0.1:8000/og.png",
+            "og:image:alt": "Demo card",
+            "og:image:height": "630",
+            "og:image:width": "1200",
+            "og:title": "About the demo shop",
+            "og:url": "http://127.0.0.1:8000/about.html"
+          },
+          "title": "About the demo shop",
+          "twitter": {
+            "twitter:card": "summary_large_image",
+            "twitter:image": "http://127.0.0.1:8000/og.png"
+          }
+        },
+        "url": "http://127.0.0.1:8000/about.html",
+        "x_robots_tag": null
+      },
+      {
+        "content_type": "text/html",
+        "depth": 1,
+        "final_url": "http://127.0.0.1:8000/pricing.html",
+        "hydration_only": [],
+        "links": [
+          "http://127.0.0.1:8000/",
+          "http://127.0.0.1:8000/about.html",
+          "http://127.0.0.1:8000/pricing.html"
+        ],
+        "og_image": {
+          "absolute": true,
+          "content_type": "image/png",
+          "height": 630,
+          "meta_alt": "Demo card",
+          "meta_height": "630",
+          "meta_width": "1200",
+          "status": 200,
+          "url": "http://127.0.0.1:8000/og.png",
+          "width": 1200
+        },
+        "redirect_chain": [],
+        "status": 200,
+        "surface": {
+          "canonical": "http://127.0.0.1:8000/pricing.html",
+          "canonical_count": 1,
+          "hreflang": {},
+          "jsonld": [
+            {
+              "error": null,
+              "missing_properties": {},
+              "types": [
+                "WebSite"
+              ],
+              "valid_json": true
+            }
+          ],
+          "meta_description": "Simple pricing for an imaginary product, used as a third page so the crawl has something to walk.",
+          "meta_robots": null,
+          "og": {
+            "og:description": "Simple pricing for an imaginary product, used as a third page so the crawl has something to walk.",
+            "og:image": "http://127.0.0.1:8000/og.png",
+            "og:image:alt": "Demo card",
+            "og:image:height": "630",
+            "og:image:width": "1200",
+            "og:title": "Pricing for the demo shop",
+            "og:url": "http://127.0.0.1:8000/pricing.html"
+          },
+          "title": "Pricing for the demo shop",
+          "twitter": {
+            "twitter:card": "summary_large_image",
+            "twitter:image": "http://127.0.0.1:8000/og.png"
+          }
+        },
+        "url": "http://127.0.0.1:8000/pricing.html",
+        "x_robots_tag": null
+      }
+    ],
+    "robots_blocks_all": false,
+    "robots_disallowed_sitemap_urls": [],
+    "robots_sitemaps": [
+      "http://127.0.0.1:8000/sitemap.xml"
+    ],
+    "robots_txt_found": true,
+    "sitemap_urls": [
+      "http://127.0.0.1:8000/",
+      "http://127.0.0.1:8000/about.html",
+      "http://127.0.0.1:8000/pricing.html"
+    ],
+    "verify_skipped": []
+  },
+  "tool": "crawlgate",
+  "verdict": "pass"
+}

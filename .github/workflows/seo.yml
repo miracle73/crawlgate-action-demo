@@ -1,0 +1,17 @@
+name: seo-gate
+on: pull_request
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  crawlgate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Stand-in for a preview deployment: serve this PR's build.
+      - run: (python3 -m http.server 8000 --bind 127.0.0.1 --directory site &) && sleep 1
+      - uses: ./.crawlgate
+        with:
+          url: http://127.0.0.1:8000/
+          baseline: crawlgate.baseline.json
+          fail-on: block

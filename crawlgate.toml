@@ -1,0 +1,3 @@
+[crawlgate]
+max_depth = 2
+production_hosts = ["127.0.0.1:8000"]
